@@ -1,24 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lottozahlen_generator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lottery-game-balls-numbers-lottery-game-balls-numbers-colored-background-vectors-illustration-127978675" translatesAutoresizingMaskIntoConstraints="NO" id="6uG-Ox-rOx">
+                                <rect key="frame" x="-353" y="-925" width="1161" height="2825"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1161" id="DeC-6x-pQf"/>
+                                    <constraint firstAttribute="height" constant="2825" id="P73-VO-jw6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lottery-146318_1280" translatesAutoresizingMaskIntoConstraints="NO" id="W9O-Xc-muI">
+                                <rect key="frame" x="79" y="566" width="271" height="294"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="271" id="0ds-jI-NWM"/>
+                                    <constraint firstAttribute="height" constant="294" id="Ehp-x7-8G0"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3LF-uL-3vo">
+                                <rect key="frame" x="20" y="531" width="388" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FCk-MD-cZw"/>
+                                    <constraint firstAttribute="width" constant="388" id="HjZ-St-9dU"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="388" id="dVc-Rg-MTU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="iqh-Hd-WcJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="208-t4-wFT">
+                                <rect key="frame" x="104" y="808" width="233" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bSG-L0-mTt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="yfk-oQ-1cm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Zahlen generieren">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" red="0.86907333135604858" green="0.94065588712692261" blue="0.12480748444795609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Zahlengenerieren:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uec-HY-JgV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heutige Lottozahlen:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27A-2A-oSD">
+                                <rect key="frame" x="20" y="84" width="388" height="58"/>
+                                <color key="backgroundColor" red="0.98499411344528198" green="0.99558061361312866" blue="0.002875523641705513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="Z8B-ld-CN7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="388" id="bfi-00-9zD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.82460564374923706" green="0.98474627733230591" blue="0.019112817943096161" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6uG-Ox-rOx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-925" id="1Oa-Wj-vEy"/>
+                            <constraint firstItem="W9O-Xc-muI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="7ku-lZ-KEe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="27A-2A-oSD" secondAttribute="trailing" symbolic="YES" id="KCo-Tz-uIn"/>
+                            <constraint firstItem="W9O-Xc-muI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="566" id="PIb-fa-ihN"/>
+                            <constraint firstItem="3LF-uL-3vo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="487" id="RFk-oo-dTI"/>
+                            <constraint firstItem="27A-2A-oSD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="ViA-u8-VZj"/>
+                            <constraint firstItem="208-t4-wFT" firstAttribute="top" secondItem="3LF-uL-3vo" secondAttribute="bottom" constant="227" id="ZUU-1Q-pwn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="208-t4-wFT" secondAttribute="trailing" constant="91" id="dt5-Xq-yeF"/>
+                            <constraint firstItem="208-t4-wFT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="eCp-gM-MKv"/>
+                            <constraint firstItem="208-t4-wFT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="meh-ES-4fM"/>
+                            <constraint firstItem="3LF-uL-3vo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oPb-d3-Ipk"/>
+                            <constraint firstItem="27A-2A-oSD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qEL-3o-54F"/>
+                            <constraint firstItem="6uG-Ox-rOx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-353" id="uxz-uZ-GXG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Heutigezahlen" destination="27A-2A-oSD" id="Xxe-r8-7P9"/>
+                        <outlet property="ZahlenvonHeute" destination="3LF-uL-3vo" id="Fx5-2d-VUM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.77570093457942" y="116.63066954643629"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lottery-146318_1280" width="1175" height="1280"/>
+        <image name="lottery-game-balls-numbers-lottery-game-balls-numbers-colored-background-vectors-illustration-127978675" width="1600" height="1370"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

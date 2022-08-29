@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "lottery-game-balls-numbers-lottery-game-balls-numbers-colored-background-vectors-illustration-127978675.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
